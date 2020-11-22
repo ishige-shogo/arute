@@ -11,10 +11,34 @@
 // about supported directives.
 //
 //= require jquery3
+//= require jquery_ujs
 //= require popper
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+/* global $ */
 
+$(function () {
+    $('.point').click(function () {
+        $(this).toggle('active');
+    });
+});
+
+
+//ボタンが共存しないようにする
+// $(function(){
+//     var btn = $('.1');
+//     btn.click(function(){
+//         btn.removeClass('active');
+//         $(this).addClass('active');
+//     });
+// });
+// $(function(){
+//     var btn = $('.point2');
+//     btn.click(function(){
+//         btn.removeClass('active');
+//         $(this).addClass('active');
+//     });
+// });
