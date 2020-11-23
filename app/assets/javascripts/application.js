@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require jquery3
-//= require jquery_ujs
+
 //= require popper
 //= require bootstrap-sprockets
 //= require rails-ujs
@@ -20,25 +20,89 @@
 //= require_tree .
 /* global $ */
 
-$(function () {
-    $('.point').click(function () {
-        $(this).toggle('active');
-    });
-});
+// $(function () {
+//     $('.point').click(function () {
+//         $(this).toggle('active');
+//     });
+// });
 
+
+
+// $('.point').click(function() {
+//     if (clicks % 2 == 0 || clicks == 0){
+//         $(this).removeClass('active');
+//     } else{
+//         $(this).addClass('active');
+//     }
+//     ++clicks;
+// });
+
+// $(function(){
+//     var btn = $('.point');
+//     btn.click(function(){
+//         if  (clicks % 2 == 0 || clicks == 0){
+//         $(this).removeClass('active');
+//     } else{
+//         $(this).addClass('active');
+//     }
+//     ++clicks;
+//     });
+// });
 
 //ボタンが共存しないようにする
-// $(function(){
-//     var btn = $('.1');
-//     btn.click(function(){
-//         btn.removeClass('active');
-//         $(this).addClass('active');
-//     });
-// });
-// $(function(){
-//     var btn = $('.point2');
-//     btn.click(function(){
-//         btn.removeClass('active');
-//         $(this).addClass('active');
-//     });
-// });
+$(function(){
+    var btn = $('.point1');
+    btn.click(function(){
+        btn.removeClass('active');
+        $(this).addClass('active');
+    });
+});
+$(function(){
+    var btn = $('.point2');
+    btn.click(function(){
+        btn.removeClass('active');
+        $(this).addClass('active');
+    });
+});
+$(function(){
+    var btn = $('.point3');
+    btn.click(function(){
+        btn.removeClass('active');
+        $(this).addClass('active');
+    });
+});
+$(function(){
+    var btn = $('.point4');
+    btn.click(function(){
+        btn.removeClass('active');
+        $(this).addClass('active');
+    });
+});
+$(function(){
+    var btn = $('.point5');
+    btn.click(function(){
+        btn.removeClass('active');
+        $(this).addClass('active');
+    });
+});
+$(function(){
+    var btn = $('.point6');
+    btn.click(function(){
+        btn.removeClass('active');
+        $(this).addClass('active');
+    });
+});
+$(function(){
+    var btn = $('.point7');
+    btn.click(function(){
+        btn.removeClass('active');
+        $(this).addClass('active');
+    });
+});
+$(function(){
+    var btn = $('.point8');
+    btn.click(function(){
+        btn.removeClass('active');
+        $(this).addClass('active');
+    });
+});

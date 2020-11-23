@@ -65,15 +65,20 @@ body{
     text-align: center;
 }
 .point{
-    border-width: 5px;
+    // border-width: 5px;
+    border: solid 5px #59cbe8;
 }
-// .point1{
-//     border-width: 5px;
-// }
-// .point2{
-//     border-width: 5px;
-// }
+.white{
+    border: solid 1px #fff;
+    border-color: transparent;
+    color: #fff;
+}
+
 .active{
-    background-color: #dddddd;
-    color: white;
+
 }
+.image1 {
+  height: 100%;
+  width: 100%;
+}
+

@@ -16,8 +16,10 @@
                 <li class="nav-link text-dark"> login </li>
             </ul>
             <form class="search form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text">
-                <button class="point btn btn-outline-light my-2 my-sm-0" type="submit"><strong>検索</strong></button>
+                <div class="input-group">
+                <input placeholder="キーワードを入力" class="form-control mt-1" type="text">
+                <button class="point btn btn-outline-light" type="submit"><strong>検索</strong></button>
+                </div>
             </form>
             <ul> </ul>
           </div>
@@ -28,119 +30,129 @@
 <main class="main">
     <section class="text-center">
         <div class="container">
-            <h1 class="jumbotron-heading">メッセージ</h1>
+            <h1 class="jumbotron-heading">
+                <%= image_tag 'sample.png' ,class: "image1" %>
+            </h1>
         </div>
     </section>
     <div class="album py-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-4">
+                <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <section class="card-title mb-3">タイトル</section>
                             <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                             <div class="justify-content-between align-items-center">
                                 <div class="btn-group">
-                                <button type="button" class="point 1 btn btn-sm btn-outline-success"><strong>あるって!!</strong></button>
-                                <button type="button" class="point 1 btn btn-sm btn-outline-danger"><strong>ないって..</strong></button>
+                                <button type="button" class="point point1 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                <button type="button" class="point point1 btn white"></button>
+                                <button type="button" class="point point1 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-               <div class="col-lg-3 col-md-4">
+               <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <section class="card-title mb-3">タイトル</section>
                             <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                             <div class="justify-content-between align-items-center">
                                 <div class="btn-group">
-                                <button type="button" class="point point2 btn btn-sm btn-outline-success mr-1"><strong>あるって!!</strong></button>
-                                <button type="button" class="point point2 btn btn-sm btn-outline-danger ml-1"><strong>ないって..</strong></button>
+                                <button type="button" class="point point2 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                <button type="button" class="point point2 btn white"></button>
+                                <button type="button" class="point point2 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <section class="card-title mb-3">タイトル</section>
                             <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                             <div class="justify-content-between align-items-center">
                                 <div class="btn-group">
-                                <button type="button" class="point btn btn-sm btn-outline-success mr-1"><strong>あるって!!</strong></button>
-                                <button type="button" class="point btn btn-sm btn-outline-danger ml-1"><strong>ないって..</strong></button>
+                                <button type="button" class="point point3 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                <button type="button" class="point point3 btn white"></button>
+                                <button type="button" class="point point3 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <section class="card-title mb-3">タイトル</section>
                             <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                             <div class="justify-content-between align-items-center">
                                 <div class="btn-group">
-                                <button type="button" class="point btn btn-sm btn-outline-success mr-1"><strong>あるって!!</strong></button>
-                                <button type="button" class="point btn btn-sm btn-outline-danger ml-1"><strong>ないって..</strong></button>
+                                <button type="button" class="point point4 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                <button type="button" class="point point4 btn white"></button>
+                                <button type="button" class="point point4 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <section class="card-title mb-3">タイトル</section>
                             <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                             <div class="justify-content-between align-items-center">
                                 <div class="btn-group">
-                                <button type="button" class="point btn btn-sm btn-outline-success mr-1"><strong>あるって!!</strong></button>
-                                <button type="button" class="point btn btn-sm btn-outline-danger ml-1"><strong>ないって..</strong></button>
+                                <button type="button" class="point point5 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                <button type="button" class="point point5 btn white"></button>
+                                <button type="button" class="point point5 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <section class="card-title mb-3">タイトル</section>
                             <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                             <div class="justify-content-between align-items-center">
                                 <div class="btn-group">
-                                <button type="button" class="point btn btn-sm btn-outline-success mr-1"><strong>あるって!!</strong></button>
-                                <button type="button" class="point btn btn-sm btn-outline-danger ml-1"><strong>ないって..</strong></button>
+                                <button type="button" class="point point6 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                <button type="button" class="point point6 btn white"></button>
+                                <button type="button" class="point point6 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <section class="card-title mb-3">タイトル</section>
                             <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                             <div class="justify-content-between align-items-center">
                                 <div class="btn-group">
-                                <button type="button" class="point btn btn-sm btn-outline-success mr-1"><strong>あるって!!</strong></button>
-                                <button type="button" class="point btn btn-sm btn-outline-danger ml-1"><strong>ないって..</strong></button>
+                                <button type="button" class="point point7 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                <button type="button" class="point point7 btn white"></button>
+                                <button type="button" class="point point7 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4">
+                <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
                         <div class="card-body">
                             <section class="card-title mb-3">タイトル</section>
                             <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                             <div class="justify-content-between align-items-center">
                                 <div class="btn-group">
-                                <button type="button" class="point btn btn-sm btn-outline-success mr-1"><strong>あるって!!</strong></button>
-                                <button type="button" class="point btn btn-sm btn-outline-danger ml-1"><strong>ないって..</strong></button>
+                                <button type="button" class="point point8 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                <button type="button" class="point point8 btn white"></button>
+                                <button type="button" class="point point8 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
                                 </div>
                             </div>
                         </div>
