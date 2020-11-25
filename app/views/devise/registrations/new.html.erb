@@ -1,0 +1,43 @@
+
+<div class="box">
+  <div class="box-inner">
+    <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+    <h1 class="text-center">アカウント作成</h1>
+      <div class="box-name">
+        <%= f.label :name, "名前" %><br />
+        <%= f.text_field :name, autofocus: true %>
+      </div>
+
+      <div class="box-email">
+        <%= f.label :email, "Eメール" %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="box-password">
+        <div class="a-row">
+          <%= f.label :password, "パスワード" %>
+          <!--<% if @minimum_password_length %>-->
+          <!--<em>(<%= @minimum_password_length %> characters minimum)</em>-->
+          <!--<% end %><br />-->
+          <%= f.password_field :password, autocomplete: "new-password" %>
+        </div>
+      </div>
+      <div class="box-password">
+        <div class="a-row">
+          <%= f.label :password_confirmation, "パスワード(再入力)" %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        </div>
+      </div>
+
+      <div class="box-login">
+        <%= f.submit "アカウント作成" %>
+      </div>
+    <% end %>
+
+    <div class="box-newusr">
+      <p><span>-----</span> ALUTTEのアカウントをお持ちですか？ <span>-----</span></p>
+      <%= link_to "ALUTTEにログイン", new_user_session_path %>
+    </div>
+  </div>
+</div>
