@@ -1,0 +1,2 @@
+module PosttextsHelper
+end

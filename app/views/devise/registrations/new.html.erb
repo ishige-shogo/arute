@@ -1,32 +1,43 @@
-
 <div class="box">
   <div class="box-inner">
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
     <h1 class="text-center">アカウント作成</h1>
       <div class="box-name">
-        <%= f.label :name, "名前" %><br />
+        <%= f.label :name, "ユーザー名" %>
         <%= f.text_field :name, autofocus: true %>
+        <% if resource.errors.include?(:name)%>
+          <p style="color: red">ユーザー名を入力してください(3文字以上)
+        <% end %>
       </div>
 
       <div class="box-email">
-        <%= f.label :email, "Eメール" %><br />
+        <%= f.label :email, "Eメール" %>
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        <% if resource.errors.include?(:email)%>
+          <p style="color: red">Eメールを入力してください
+        <% end %>
       </div>
 
       <div class="box-password">
         <div class="a-row">
-          <%= f.label :password, "パスワード" %>
+          <%= f.label :password, "パスワード(6文字以上)" %>
           <!--<% if @minimum_password_length %>-->
           <!--<em>(<%= @minimum_password_length %> characters minimum)</em>-->
           <!--<% end %><br />-->
           <%= f.password_field :password, autocomplete: "new-password" %>
+          <% if resource.errors.include?(:password)%>
+            <p style="color: red">パスワードを入力してください(6文字以上)
+          <% end %>
         </div>
       </div>
       <div class="box-password">
         <div class="a-row">
-          <%= f.label :password_confirmation, "パスワード(再入力)" %><br />
+          <%= f.label :password_confirmation, "パスワード(再入力)" %>
           <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+          <% if resource.errors.include?(:password_confirmation)%>
+            <p style="color: red">もう一度パスワードを入力してください
+          <% end %>
         </div>
       </div>
 
