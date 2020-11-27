@@ -1,3 +1,38 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <div class="container header-line">
+
+          <%=link_to "ALUTTE", root_path, class:"navbar-brand"%>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class ="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-link text-dark"> How to </li>
+              <li class="nav-link text-dark"> ALUTTEとは？ </li>
+              <li class="nav-link text-dark"> Q&A </li>
+              <% if user_signed_in? %>
+                <%=link_to "logout", destroy_user_session_path, class:"li nav-link text-dark",method: :delete %>
+                <div class="li nav-link text-dark">
+                    <%="#{@user.name}さんのマイページ"%>
+                </div>
+              <% else %>
+                <%=link_to "sign up", new_user_registration_path, class:"li nav-link text-dark" %>
+                <%=link_to "login", new_user_session_path, class:"li nav-link text-dark" %>
+              <% end %>
+          </ul>
+          <form class="search form-inline mt-2 mt-md-0">
+              <div class="input-group">
+              <input placeholder="キーワードを入力" class="form-control mt-1" type="text">
+              <button class="point btn btn-outline-light" type="submit"><strong>検索</strong></button>
+              </div>
+          </form>
+          <ul> </ul>
+        </div>
+      </div>
+  </nav>
+</header>
 <main class="main">
     <section class="text-center">
         <div class="container">
