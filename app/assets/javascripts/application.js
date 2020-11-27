@@ -16,7 +16,7 @@
 //= require bootstrap-sprockets
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
+
 //= require_tree .
 /* global $ */
 
@@ -107,3 +107,13 @@ $(function(){
     });
 });
 
+
+//scrollトップ
+$(function(){
+    $('#back').on('click',function(event){
+        $('body, html').animate({
+            scrollTop:0
+        }, 400);
+        event.preventDefault();
+    });
+});

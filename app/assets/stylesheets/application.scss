@@ -47,9 +47,9 @@ body{
     cursor: pointer;
 }
 .main{
-  padding-top: 100px;
-  height: 1500px;
+  height: 2000px;
 }
+
 #navbarNavDropdown{
     background: #59cbe8;
 }
@@ -78,6 +78,12 @@ body{
 
 }
 .image1 {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-right: 30px;
+}
+.image2 {
   height: 100%;
   width: 100%;
   margin-bottom: 10px;
@@ -145,5 +151,12 @@ ul,li{
 }
 .question{
     margin-right: 30px;
+}
+
+#back{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
 }
 
