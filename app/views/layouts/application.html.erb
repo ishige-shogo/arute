@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ALUTE</title>
+    <title>ALUTTE</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
   </head>
 
   <body>
 
     <%= yield %>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+     var mySwiper = new Swiper ('.swiper-container', {
+     })
+    </script>
 
   </body>
 </html>

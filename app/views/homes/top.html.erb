@@ -14,9 +14,7 @@
               <li class="nav-link text-dark"> Q&A </li>
               <% if user_signed_in? %>
                 <%=link_to "logout", destroy_user_session_path, class:"li nav-link text-dark",method: :delete %>
-                <div class="li nav-link text-dark">
-                    <%="#{@user.name}さんのマイページ"%>
-                </div>
+                <%=link_to "#{@user.name}さんのマイページ", posttexts_path, class:"li nav-link text-dark" %>
               <% else %>
                 <%=link_to "sign up", new_user_registration_path, class:"li nav-link text-dark" %>
                 <%=link_to "login", new_user_session_path, class:"li nav-link text-dark" %>
@@ -48,6 +46,24 @@
             </h1>
         </div>
     </section>
+
+    <div class="container">
+
+        <div class="swiper-container">
+        	<!-- メイン表示部分 -->
+        	<div class="swiper-wrapper">
+        		<!-- 各スライド -->
+        		<div class="swiper-slide"><%= image_tag 'test1.jpg', class:"merit" %></div>
+        		<div class="swiper-slide">Slide 2</div>
+        		<div class="swiper-slide">Slide 3</div>
+        		<div class="swiper-slide">Slide 4</div>
+        	</div>
+        </div>
+
+    </div>
+
+
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
