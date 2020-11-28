@@ -13,7 +13,7 @@
               <li class="nav-link text-dark"> ALUTTEとは？ </li>
               <li class="nav-link text-dark"> Q&A </li>
               <% if user_signed_in? %>
-                <%=link_to "logout", destroy_user_session_path, class:"li nav-link text-dark",method: :delete %>
+                <%=link_to "logout", destroy_user_session_path, class:"li nav-link text-dark",method: :delete ,data:{confirm:"  [確認]  ログアウトしますか?"}%>
                 <div class="li nav-link text-dark">
                     <%="#{@user.name}さんのマイページ"%>
                 </div>
