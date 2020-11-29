@@ -11,7 +11,7 @@
           <ul class="navbar-nav ml-auto">
               <li class="nav-link text-dark"> How to </li>
               <li class="nav-link text-dark"> ALUTTEとは？ </li>
-              <li class="nav-link text-dark"> Q&A </li>
+              <li class="nav-link text-dark" id="qa"> Q&A </li>
               <% if user_signed_in? %>
                 <%=link_to "logout", destroy_user_session_path, class:"li nav-link text-dark",method: :delete, data:{confirm:"  [確認]  ログアウトしますか?"}%>
                 <%=link_to "#{@user.name}さんのマイページ", posttexts_path, class:"li nav-link text-dark" %>
@@ -48,12 +48,9 @@
     </section>
 
     <div class="container">
-
         <div class="swiper-container">
-        	<!-- メイン表示部分 -->
         	<div class="swiper-wrapper">
-        		<!-- 各スライド -->
-        		<div class="swiper-slide"><%= image_tag 'test1.jpg', class:"merit" %></div>
+        		<div class="swiper-slide"><%= image_tag 'test1.jpg', class:"img-fluid" %></div>
         		<div class="swiper-slide">Slide 2</div>
         		<div class="swiper-slide">Slide 3</div>
         		<div class="swiper-slide">Slide 4</div>
@@ -61,10 +58,28 @@
         <div class="swiper-button-prev swiper-button-white"></div>
         <div class="swiper-button-next swiper-button-white"></div>
         </div>
-
     </div>
 
 
+    <div class="container">
+        <ul class="nav nav-tabs nav-justified">
+            <li class="nav-item">
+                <a href="#photo1" class="nav-link active tabs" data-toggle="tab">探したい人</a>
+            </li>
+            <li class="nav-item">
+                <a href="#photo2" class="nav-link tabs" data-toggle="tab">見つけた人</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="photo1" class="tab-pane active">
+                <%= image_tag 'test1.jpg', class:"img-fluid", alt:"" %>
+            </div>
+            <div id="photo2" class="tab-pane">
+                <%= image_tag 'test2.jpg', class:"img-fluid", alt:"" %>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row">

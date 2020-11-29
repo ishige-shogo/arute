@@ -22,6 +22,18 @@ header{
     font-family: "Noto Sans JP",sans-serif;
     font-weight: 700;
 }
+footer{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    position: absolute;/*←絶対位置*/
+    bottom: 0;
+}
+footer p{
+    padding-top: 20px;
+}
 .header-line{
     border-bottom: solid 10px #000;
 }
@@ -33,6 +45,7 @@ body{
     background: #59cbe8;
     font-family: "Noto Sans JP",sans-serif;
     font-weight: 700;
+    position: relative;
 }
 .navbar-brand{
     font-size: 45px;
@@ -46,9 +59,7 @@ body{
     border-bottom: solid 3px #fff;
     cursor: pointer;
 }
-.main{
-  height: 2000px;
-}
+
 
 #navbarNavDropdown{
     background: #59cbe8;
@@ -89,11 +100,13 @@ body{
   margin-bottom: 10px;
 }
 
-.merit{
-    width: 100%;
-    height: 100%;
-}
-
+// .merit{
+//     width: 100%;
+//     height: 100%;
+// }
+ .tabs{
+     font-size: 20px;
+ }
 
 
 
@@ -183,24 +196,24 @@ ul,li{
 /* すべての画面サイズで適用される設定 */
 .swiper-container {
     width: 100%;
-    height: 600px;
+    // height: 600px;
 }
-/* タブレット横置きサイズ（1024px）以下の際に適用される設定 */
-@media screen and (max-width: 991px) {
-  .swiper-container {
-    height: 400px;
-  }
-}
-/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
-@media screen and (max-width: 767px) {
-  .swiper-container{
-    height: 300px;
-  }
-}
-/* スマートフォンサイズ（425px）以下の際に適用される設定 */
-@media screen and (max-width: 575px) {
-  .swiper-container{
-    height: 270px;
-  }
-}
+// /* タブレット横置きサイズ（1024px）以下の際に適用される設定 */
+// @media screen and (max-width: 991px) {
+//   .swiper-container {
+//     height: 400px;
+//   }
+// }
+// /* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
+// @media screen and (max-width: 767px) {
+//   .swiper-container{
+//     height: 300px;
+//   }
+// }
+// /* スマートフォンサイズ（425px）以下の際に適用される設定 */
+// @media screen and (max-width: 575px) {
+//   .swiper-container{
+//     height: 270px;
+//   }
+// }
 

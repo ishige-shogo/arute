@@ -118,4 +118,11 @@ $(function(){
     });
 });
 
-
+$(function(){
+    $('#qa').on('click',function(event){
+        $('body, html').animate({
+            scrollTop:1500
+        }, 400);
+        event.preventDefault();
+    });
+});
