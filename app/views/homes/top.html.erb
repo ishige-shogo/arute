@@ -39,209 +39,212 @@
             </h1>
         </div>
     </section>
-    <section class="text-center">
+
+    <div class=js-animation>
+        <section class="text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">
+                    <%= image_tag 'sample.png' ,class: "image2" %>
+                </h1>
+            </div>
+        </section>
+
         <div class="container">
-            <h1 class="jumbotron-heading">
-                <%= image_tag 'sample.png' ,class: "image2" %>
-            </h1>
-        </div>
-    </section>
-
-    <div class="container">
-        <div class="swiper-container">
-        	<div class="swiper-wrapper">
-        		<div class="swiper-slide"><%= image_tag 'test1.jpg', class:"img-fluid" %></div>
-        		<div class="swiper-slide">Slide 2</div>
-        		<div class="swiper-slide">Slide 3</div>
-        		<div class="swiper-slide">Slide 4</div>
-        	</div>
-        <div class="swiper-button-prev swiper-button-white"></div>
-        <div class="swiper-button-next swiper-button-white"></div>
-        </div>
-    </div>
-
-
-    <div class="container">
-        <ul class="nav nav-tabs nav-justified">
-            <li class="nav-item">
-                <a href="#photo1" class="nav-link active tabs" data-toggle="tab">探したい人</a>
-            </li>
-            <li class="nav-item">
-                <a href="#photo2" class="nav-link tabs" data-toggle="tab">見つけた人</a>
-            </li>
-        </ul>
-
-        <div class="tab-content">
-            <div id="photo1" class="tab-pane active">
-                <%= image_tag 'test1.jpg', class:"img-fluid", alt:"" %>
-            </div>
-            <div id="photo2" class="tab-pane">
-                <%= image_tag 'test2.jpg', class:"img-fluid", alt:"" %>
+            <div class="swiper-container">
+            	<div class="swiper-wrapper">
+            		<div class="swiper-slide"><%= image_tag 'test1.jpg', class:"img-fluid" %></div>
+            		<div class="swiper-slide">Slide 2</div>
+            		<div class="swiper-slide">Slide 3</div>
+            		<div class="swiper-slide">Slide 4</div>
+            	</div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-            <ul id="accordion_menu">
-              <li>
-                <a data-toggle="collapse" href="#menu01" aria-controls="#menu01" aria-expanded="false" class="card">
-                    <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
-                </a>
-              </li>
-              <ul id="menu01" class="collapse">
-                <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
-            　</ul>
-            　<li>
-                <a data-toggle="collapse" href="#menu02" aria-controls="#menu02" aria-expanded="false" class="card">
-                    <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
-                </a>
-              </li>
-              <ul id="menu02" class="collapse">
-                <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
-            　</ul>
-            　<li>
-                <a data-toggle="collapse" href="#menu03" aria-controls="#menu03" aria-expanded="false" class="card">
-                    <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
-                </a>
-              </li>
-              <ul id="menu03" class="collapse">
-                <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
-            　</ul>
-            　<li>
-                <a data-toggle="collapse" href="#menu04" aria-controls="#menu04" aria-expanded="false" class="card">
-                    <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
-                </a>
-              </li>
-              <ul id="menu04" class="collapse">
-                <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
-            　</ul>
+
+        <div class="container">
+            <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a href="#photo1" class="nav-link active tabs" data-toggle="tab">探したい人</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#photo2" class="nav-link tabs" data-toggle="tab">見つけた人</a>
+                </li>
             </ul>
+
+            <div class="tab-content">
+                <div id="photo1" class="tab-pane active">
+                    <%= image_tag 'test1.jpg', class:"img-fluid", alt:"" %>
+                </div>
+                <div id="photo2" class="tab-pane">
+                    <%= image_tag 'test2.jpg', class:"img-fluid", alt:"" %>
+                </div>
             </div>
         </div>
-    </div>
 
-
-
-    <div class="album py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <section class="card-title mb-3">タイトル</section>
-                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <div class="justify-content-between align-items-center">
-                                <div class="btn-group">
-                                <button type="button" class="point point1 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
-                                <button type="button" class="point point1 btn white"></button>
-                                <button type="button" class="point point1 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                <div class="col-md-12">
+                <ul id="accordion_menu">
+                  <li>
+                    <a data-toggle="collapse" href="#menu01" aria-controls="#menu01" aria-expanded="false" class="card">
+                        <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
+                    </a>
+                  </li>
+                  <ul id="menu01" class="collapse">
+                    <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
+                　</ul>
+                　<li>
+                    <a data-toggle="collapse" href="#menu02" aria-controls="#menu02" aria-expanded="false" class="card">
+                        <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
+                    </a>
+                  </li>
+                  <ul id="menu02" class="collapse">
+                    <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
+                　</ul>
+                　<li>
+                    <a data-toggle="collapse" href="#menu03" aria-controls="#menu03" aria-expanded="false" class="card">
+                        <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
+                    </a>
+                  </li>
+                  <ul id="menu03" class="collapse">
+                    <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
+                　</ul>
+                　<li>
+                    <a data-toggle="collapse" href="#menu04" aria-controls="#menu04" aria-expanded="false" class="card">
+                        <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
+                    </a>
+                  </li>
+                  <ul id="menu04" class="collapse">
+                    <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
+                　</ul>
+                </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="album py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <section class="card-title mb-3">タイトル</section>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <div class="justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="point point1 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                    <button type="button" class="point point1 btn white"></button>
+                                    <button type="button" class="point point1 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-               <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <section class="card-title mb-3">タイトル</section>
-                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <div class="justify-content-between align-items-center">
-                                <div class="btn-group">
-                                <button type="button" class="point point2 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
-                                <button type="button" class="point point2 btn white"></button>
-                                <button type="button" class="point point2 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                   <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <section class="card-title mb-3">タイトル</section>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <div class="justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="point point2 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                    <button type="button" class="point point2 btn white"></button>
+                                    <button type="button" class="point point2 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <section class="card-title mb-3">タイトル</section>
-                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <div class="justify-content-between align-items-center">
-                                <div class="btn-group">
-                                <button type="button" class="point point3 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
-                                <button type="button" class="point point3 btn white"></button>
-                                <button type="button" class="point point3 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <section class="card-title mb-3">タイトル</section>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <div class="justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="point point3 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                    <button type="button" class="point point3 btn white"></button>
+                                    <button type="button" class="point point3 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <section class="card-title mb-3">タイトル</section>
-                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <div class="justify-content-between align-items-center">
-                                <div class="btn-group">
-                                <button type="button" class="point point4 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
-                                <button type="button" class="point point4 btn white"></button>
-                                <button type="button" class="point point4 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <section class="card-title mb-3">タイトル</section>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <div class="justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="point point4 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                    <button type="button" class="point point4 btn white"></button>
+                                    <button type="button" class="point point4 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <section class="card-title mb-3">タイトル</section>
-                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <div class="justify-content-between align-items-center">
-                                <div class="btn-group">
-                                <button type="button" class="point point5 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
-                                <button type="button" class="point point5 btn white"></button>
-                                <button type="button" class="point point5 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <section class="card-title mb-3">タイトル</section>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <div class="justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="point point5 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                    <button type="button" class="point point5 btn white"></button>
+                                    <button type="button" class="point point5 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <section class="card-title mb-3">タイトル</section>
-                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <div class="justify-content-between align-items-center">
-                                <div class="btn-group">
-                                <button type="button" class="point point6 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
-                                <button type="button" class="point point6 btn white"></button>
-                                <button type="button" class="point point6 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <section class="card-title mb-3">タイトル</section>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <div class="justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="point point6 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                    <button type="button" class="point point6 btn white"></button>
+                                    <button type="button" class="point point6 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <section class="card-title mb-3">タイトル</section>
-                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <div class="justify-content-between align-items-center">
-                                <div class="btn-group">
-                                <button type="button" class="point point7 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
-                                <button type="button" class="point point7 btn white"></button>
-                                <button type="button" class="point point7 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <section class="card-title mb-3">タイトル</section>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <div class="justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="point point7 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                    <button type="button" class="point point7 btn white"></button>
+                                    <button type="button" class="point point7 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-body">
-                            <section class="card-title mb-3">タイトル</section>
-                            <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            <div class="justify-content-between align-items-center">
-                                <div class="btn-group">
-                                <button type="button" class="point point8 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
-                                <button type="button" class="point point8 btn white"></button>
-                                <button type="button" class="point point8 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="card-body">
+                                <section class="card-title mb-3">タイトル</section>
+                                <p class="card-text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <div class="justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                    <button type="button" class="point point8 btn btn-outline-success btn-sm "><strong>あるって!!</strong></button>
+                                    <button type="button" class="point point8 btn white"></button>
+                                    <button type="button" class="point point8 btn btn-outline-danger btn-sm "><strong>ないって..</strong></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -251,4 +254,5 @@
         </div>
     </div>
     <%= link_to image_tag('arrow.png', id: "back"),"#" %>
+
 </main>

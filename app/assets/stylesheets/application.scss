@@ -88,9 +88,12 @@ body{
 .active{
 
 }
+
+
 .image1 {
   height: 100%;
   width: 100%;
+  margin-top: 100px;
   margin-bottom: 10px;
   padding-right: 30px;
 }
@@ -217,3 +220,14 @@ ul,li{
 //   }
 // }
 
+.js-animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+.js-animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}

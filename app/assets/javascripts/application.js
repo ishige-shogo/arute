@@ -108,7 +108,7 @@ $(function(){
 });
 
 
-//scrollトップ
+//scrollの機能
 $(function(){
     $('#back').on('click',function(event){
         $('body, html').animate({
@@ -126,3 +126,23 @@ $(function(){
         event.preventDefault();
     });
 });
+
+
+
+//ページが浮かび上がる機能
+
+function showElementAnimation() {
+
+  var element = document.getElementsByClassName('js-animation');
+  if(!element) return;
+
+  var scrollY = window.pageYOffset;
+  var windowH = window.innerHeight;
+
+  for(var i=0;i<element.length;i++) { var elemClientRect = element[i].getBoundingClientRect(); var elemY = scrollY + elemClientRect.top; if(scrollY + windowH  > elemY) {
+      element[i].classList.add('is-show');
+    }
+  }
+}
+showElementAnimation();
+window.addEventListener('scroll', showElementAnimation);
