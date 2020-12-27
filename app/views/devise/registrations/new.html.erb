@@ -34,7 +34,7 @@
   <div class="box-inner">
     <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
-    <h1 class="text-center">アカウント作成</h1>
+    <h1 class="text-center"><strong>アカウント作成</strong></h1>
       <div class="box-name">
         <%= f.label :name, "ユーザー名(3文字以上)" %>
         <%= f.text_field :name, autofocus: true %>

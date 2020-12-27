@@ -34,7 +34,7 @@
   <div class="box-inner">
     <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
       <%= render "devise/shared/error_messages", resource: resource %>
-    <h1 class="text-center">パスワード<br>再発行フォーム</h1>
+    <h1 class="text-center">パスワード<br>再発行</h1>
       <div class="box-email">
         <%= f.label :email,"登録のEメール" %>
         <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
