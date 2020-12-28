@@ -2,7 +2,10 @@
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container header-line">
 
-          <%=link_to "ALUTTE", root_path, class:"navbar-brand"%>
+
+         <%=link_to root_path, class:"navbar-brand" do%>
+            <%= image_tag 'logo1.png', class:"image0" %>
+         <% end %>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class ="navbar-toggler-icon"></span>
@@ -66,25 +69,30 @@
         <div class="container">
             <ul class="nav nav-tabs nav-justified">
                 <li class="nav-item">
-                    <a href="#photo1" class="nav-link active tabs" data-toggle="tab">探したい人</a>
+                    <a href="#photo1" class="nav-link active tabs text-dark" data-toggle="tab">探したい人</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#photo2" class="nav-link tabs" data-toggle="tab">見つけた人</a>
+                    <a href="#photo2" class="nav-link tabs text-dark" data-toggle="tab">見つけた人</a>
                 </li>
             </ul>
 
             <div class="tab-content">
                 <div id="photo1" class="tab-pane active">
-                    <%= image_tag 'test1.jpg', class:"img-fluid", alt:"" %>
+                    <%#= image_tag 'test1.jpg', class:"img-fluid", alt:"" %>
+                    <%=link_to "admins", root_path, class: "btn btn-primary" %>
                 </div>
                 <div id="photo2" class="tab-pane">
-                    <%= image_tag 'test2.jpg', class:"img-fluid", alt:"" %>
+                    <%= form_with model: @user, url: root_path do |f| %>
+                        <%=f.text_field :name %>
+                        <%=f.submit "保存", class:"btn, btn-primary" %>
+                    <% end %>
+                    <%#= image_tag 'test2.jpg', class:"img-fluid", alt:"" %>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row">
+            <div class="row mt-5">
                 <div class="col-md-12">
                 <ul id="accordion_menu">
                   <li>
@@ -94,31 +102,31 @@
                   </li>
                   <ul id="menu01" class="collapse">
                     <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
-                　</ul>
-                　<li>
+                </ul>
+                <li>
                     <a data-toggle="collapse" href="#menu02" aria-controls="#menu02" aria-expanded="false" class="card">
                         <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
                     </a>
                   </li>
                   <ul id="menu02" class="collapse">
                     <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
-                　</ul>
-                　<li>
+                </ul>
+                <li>
                     <a data-toggle="collapse" href="#menu03" aria-controls="#menu03" aria-expanded="false" class="card">
                         <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
                     </a>
                   </li>
                   <ul id="menu03" class="collapse">
                     <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
-                　</ul>
-                　<li>
+                </ul>
+                <li>
                     <a data-toggle="collapse" href="#menu04" aria-controls="#menu04" aria-expanded="false" class="card">
                         <div class="question">Q.クエスチョンクエスチョンクエスチョンクエスチョンクエスチョン</div>
                     </a>
                   </li>
                   <ul id="menu04" class="collapse">
                     <li class="answer">A.アンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサーアンサー</li>
-                　</ul>
+                </ul>
                 </ul>
                 </div>
             </div>
