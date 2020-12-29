@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_26_070743) do
+ActiveRecord::Schema.define(version: 2020_12_29_070629) do
+
+  create_table "rugby_world_cup_host_countries", force: :cascade do |t|
+    t.string "name"
+    t.integer "total_attendance"
+    t.integer "matches"
+    t.integer "stadium_capacity"
+    t.datetime "held_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

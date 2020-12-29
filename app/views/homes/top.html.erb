@@ -82,10 +82,7 @@
                     <%=link_to "admins", root_path, class: "btn btn-primary" %>
                 </div>
                 <div id="photo2" class="tab-pane">
-                    <%= form_with model: @user, url: root_path do |f| %>
-                        <%=f.text_field :name %>
-                        <%=f.submit "保存", class:"btn, btn-primary" %>
-                    <% end %>
+
                     <%#= image_tag 'test2.jpg', class:"img-fluid", alt:"" %>
                 </div>
             </div>
@@ -131,6 +128,28 @@
                 </div>
             </div>
         </div>
+
+        <div class="container">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="item1-tab" data-toggle="tab" href="#item1" role="tab" aria-controls="item1" aria-selected="true">Item#1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="item2-tab" data-toggle="tab" href="#item2" role="tab" aria-controls="item2" aria-selected="false">Item#2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="item3-tab" data-toggle="tab" href="#item3" role="tab" aria-controls="item3" aria-selected="false">Item#3</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="item1" role="tabpanel" aria-labelledby="item1-tab"><%= column_chart RugbyWorldCupHostCountry.pluck(:held_at, :total_attendance) %></div>
+          <div class="tab-pane fade" id="item2" role="tabpanel" aria-labelledby="item2-tab"><%= column_chart RugbyWorldCupHostCountry.pluck(:held_at, :matches) %></div>
+          <div class="tab-pane fade" id="item3" role="tabpanel" aria-labelledby="item3-tab">This is a text of item#3.</div>
+        </div>
+        </div>
+
+
+
 
 
 
